@@ -1,0 +1,89 @@
+/* body{
+    background-image: image("a.png");
+} */
+
+/* .logo{
+    fill : blue;
+} */
+.signupbox{
+    width: 280px;
+    position: absolute;
+    top: 23%;
+    left: 60%;
+    /* transform: translate(-40%,-50%); */
+    color: var(--theme-color);
+    border: 0px solid var(--theme-color);
+    padding: 20px 60px;
+    -webkit-box-shadow: 1px 4px 26px 4px var(--theme-color);
+    -moz-box-shadow: 1px 4px 26px 4px var(--theme-color);
+    box-shadow: 1px 4px 26px 4px var(--theme-color);
+}
+
+.signupbox h1{
+    float: left;
+    font-size: 40px;
+    border-bottom : 6px;
+    margin-bottom: 40px;
+    margin-top: 0vh;
+    padding : 13px 0;
+}
+
+.textbox{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid var(--theme-color);
+    color:var(--theme-color);
+}
+
+.textbox input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    width: 200px;
+    margin: 0 10px;
+    color: var(--text-color);
+}
+.btn2 {
+    width: 100%;
+    background: var(--theme-color);
+    border: 0px solid var(--theme-color);
+    color: var(--bg-color);
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.fa-film{
+    font-size: 400px;
+    color: var(--theme-color);
+    top : 25%;
+    margin-top: 15vh;
+    margin-left: 10%;
+}
+
+.img1 img{
+    /* width: 900px; */
+    height: -100vh;
+    /* image-resolution: 1000px; */
+    /* background-image: var(--theme-img); */
+    width:100%;
+    /* background-repeat: no-repeat ;  */
+    /* width: 50%; */
+    /* overflow: hidden; */
+     background-size: cover;
+    /* background-position: center left; */
+    /* max-width: 50%; */
+    /* background-position-x: 0cm; */
+}
+
+.logo img{
+    position: left;  
+    margin-top:-20px;
+    margin-left: 0px;
+}
+}
+}

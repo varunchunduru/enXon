@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css" />
+    <!-- register box -->
+    <link rel="stylesheet" href="signup.css">
+    <script src="https://kit.fontawesome.com/f25aef5a77.js" crossorigin="anonymous"></script>
+
+    <!-- register box end -->
+</head>
+<body>
+    <input type="checkbox" class="theme-switch" id="theme-switch" />
+    <div id="page">
+      <div id="content">
+          <!-- <label for="theme-switch" class="switch-label"></label> -->
+    <div class="main">
+        <nav>
+            <div class="logo"><img src="l22.png"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="login.html">Login  </a></li>
+                </ul>
+            </div>
+            <label for="theme-switch" class="switch-label"></label>
+        </nav>
+    </div>
+    <i class="fas fa-film"></i>
+    <!-- <img class="img1" src="aw.png" alt="nothing here !"> -->
+    <!-- <div class="img1"><img src ="aw.png"></div> -->
+    <!-- Register box -->
+    <div class="signupbox">
+      <h1> Signup </h1>
+
+      <div class="textbox">
+          <input type="text" placeholder="First Name" name="" value="">
+          </div>
+
+      <div class="textbox">
+          <input type="text" placeholder="Second Name" name="" value="">
+          </div>
+
+      <div class="textbox">
+          <input type="text" placeholder="Email Address" name="" value="">
+          </div>
+
+      <div class="textbox">
+              <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" name="" value="">
+          </div> 
+
+      <div class="textbox">
+              <i class="fas fa-key"></i>
+          <input type="password" placeholder="Enter Password" name="" value="">
+          </div>
+      <div class="textbox">
+              <i class="fas fa-key"></i>
+          <input type="password" placeholder="Re-Enter Password" name="" value="">
+          </div>
+
+        <input class="btn2" type="button" name="" value="Register">
+      <!-- register box end -->
+      <!-- <div class="bckimg"><img src="a.png" ></div> -->
+      
+
+
+    <script>
+        // This code is only used to remember theme selection between page loads
+        const themeSwitch = document.querySelector('.theme-switch');
+        themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+  
+        themeSwitch.addEventListener('change', function(e) {
+          if (e.currentTarget.checked === true) {
+            // Add item to localstorage
+            localStorage.setItem('switchedTheme', 'true');
+          } else {
+            // Remove item if theme is switched back to normal
+            localStorage.removeItem('switchedTheme');
+          }
+        });
+      </script>
+</body>
+</html>

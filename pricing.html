@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>enXon Pricing</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="pricing.css">
+    
+</head>
+<body>
+    <input type="checkbox" class="theme-switch" id="theme-switch" />
+    <div id="page">
+      <div id="content">
+    <div class="main">
+        <nav>
+            <div class="logo"><img src="l22.png"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="login.html">Login  </a></li>
+                    <li><a href="signup.html">Signup  </a></li>
+                    <li><a href="">FAQ</a></li>
+                    
+                </ul>
+            </div>
+            <label for="theme-switch" class="switch-label"></label>
+        </nav>
+    </div>
+    <div class="pricing-table">
+    <div class="col">
+        <div class="table">
+            <h2>Regular</h2>
+            <div class="price">
+                $10
+                <span>per month</span>
+            </div>
+            <ul>
+                <li><strong>2</strong>Screens</li>
+                <li><strong>4</strong>Profiles</li>
+                <li><strong>10GB</strong>Storage</li>
+                <li><strong>1</strong>Account</li>
+            </ul>
+            <a href="#">Buy now</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="table">
+            <h2>Pro</h2>
+            <div class="pop">Popular</div>
+            <div class="price">
+                $15
+                <span>per month</span>
+            </div>
+            <ul>
+                <li><strong>3</strong>Screens</li>
+                <li><strong>6</strong>Profiles</li>
+                <li><strong>15GB</strong>Storage</li>
+                <li><strong>1</strong>Account</li>
+            </ul>
+            <a href="#">Buy now</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="table">
+            <h2>Premium</h2>
+            <div class="price">
+                $20
+                <span>per month</span>
+            </div>
+            <ul>
+                <li><strong>4</strong>Screens</li>
+                <li><strong>8</strong>Profiles</li>
+                <li><strong>20GB</strong>Storage</li>
+                <li><strong>1</strong>Account</li>
+            </ul>
+            <a href="#">Buy now</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="table">
+            <h2>Ultimate</h2>
+            <div class="price">
+                $25
+                <span>per month</span>
+            </div>
+            <ul>
+                <li><strong>5</strong>Screens</li>
+                <li><strong>10</strong>Profiles</li>
+                <li><strong>25GB</strong>Storage</li>
+                <li><strong>1</strong>Account</li>
+            </ul>
+            <a href="#">Buy now</a>
+        </div>
+    </div>
+
+   
+      
+
+
+    <script>
+        // This code is only used to remember theme selection between page loads
+        const themeSwitch = document.querySelector('.theme-switch');
+        themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+  
+        themeSwitch.addEventListener('change', function(e) {
+          if (e.currentTarget.checked === true) {
+            // Add item to localstorage
+            localStorage.setItem('switchedTheme', 'true');
+          } else {
+            // Remove item if theme is switched back to normal
+            localStorage.removeItem('switchedTheme');
+          }
+        });
+      </script>
+</body>
+</html>
