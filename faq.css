@@ -1,0 +1,21 @@
+.faqimg {
+    max-width: 20%;
+    margin-top: 10px;
+    margin-left: 600px;
+}
+
+.faqs{
+    margin-top: 5vh;
+}
+.ques{
+    color: var(--theme-color);
+    margin: 0px 100px;
+    /* padding: 10px; */
+
+}
+
+.ans{
+    color: var(--text-color);
+    margin: 0 100px;
+    padding: 20px;
+}

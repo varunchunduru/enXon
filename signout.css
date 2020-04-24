@@ -1,0 +1,25 @@
+.cc{
+    margin-top: 10vh;
+
+}
+.ccc{
+    color: var(--theme-color);
+    margin: 0px 100px;
+    font-size: 30px;
+    /* padding: 10px; */
+
+}
+
+.ccmail{
+    color: var(--text-color);
+    margin: 0 100px;
+    font-size: 50px;
+    /* padding: 20px; */
+}
+
+.note{
+    color: var(--theme-color);
+    margin: 0px 100px;
+    font-size: 20px;
+}
+

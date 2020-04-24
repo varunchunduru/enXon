@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>enXon Movies</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="navbarm.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="movies.css">
+    <script src="https://kit.fontawesome.com/f25aef5a77.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <input type="checkbox" class="theme-switch" id="theme-switch" />
+    <div id="page">
+      <div id="content">
+    <div class="main">
+        <nav>
+            <div class="logo"><img src="l22.png"></div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="movies.html">Home</a></li>
+                    <li><a href="movies.html">Movies</a></li>
+                    <li><a href="#">Series</a></li>
+                    <li><a href="mailto:care@enxon.com">Kids Mode</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="signout.html">Signout</a></li>
+                    
+                </ul>
+            </div>
+            <label for="theme-switch" class="switch-label"></label>
+        </nav>
+    </div>
+    <div class="container movie-details">
+        <div class="row">
+            <div class="col-md-6 left-box">
+                <h1>Dhoom 3</h1>
+                <p class="des"> The favourite Indian action franchise is back. 
+                    <!-- This time Jai Dixit (Abhishek Bachchan) & Ali (Uday Chopra) return to match their wits with the enigmatic clown thief, 
+                    Sahir (Aamir Khan),who has the city of Chicago in his thrall. In this battle of revenge & dignity, 
+                    the lines blur and the conventional definition of good & bad don't apply.Prepare to watch a spectacle that will thrill you 
+                    and move you. -->
+                </p>
+                <p>Cast : </p>
+                <div class="casting">
+                    <img src="ak.jpg" title="Aamir Khan">
+                    <img src="kk.jpg" title="Katrina Kaif">
+                    <img src="ab.jpg" title="Abhishek Bachan">
+                    <img src="js.jpg" title="Jakie Shroff">
+                    <img src="uc.jpg" title="Uday Chopra">
+                </div>
+                <div class="btn">
+                <a href="#"><i class="fas fa-play"></i> Watch Now</a>
+                <a href="#"><i class="fas fa-arrow-down"></i> Download</a>
+            </div>
+            <div class="col-md-6">
+                <img src="d3.jpg" class="movie-img">
+            </div>
+            </div>
+        </div>
+        <div class="container series">
+            <h3>Popular Movies</h3>
+            <div class="row">
+                <div class="class-md-4">
+                    <div class="row">
+                        <div class="col-6"><img src="a.jpg" class="res"></div>
+                        <div class="col-6"><img src="e.jpg" class="res"></div>
+                        <div class="col-6"><img src="b.jpg" class="res"></div>
+                        <div class="col-6"><img src="c.jpg" class="res"></div>
+                        <div class="col-6"><img src="d.jpg" class="res"></div>
+                        <div class="col-6"><img src="f.jpg" class="res"></div>
+                    </div>
+                </div>
+                <div class="class-md-4"></div>
+                <div class="class-md-4"></div>
+            </div>
+        </div>
+    </div>
+
+   
+      
+
+
+    <script>
+        // This code is only used to remember theme selection between page loads
+        const themeSwitch = document.querySelector('.theme-switch');
+        themeSwitch.checked = localStorage.getItem('switchedTheme') === 'true';
+  
+        themeSwitch.addEventListener('change', function(e) {
+          if (e.currentTarget.checked === true) {
+            // Add item to localstorage
+            localStorage.setItem('switchedTheme', 'true');
+          } else {
+            // Remove item if theme is switched back to normal
+            localStorage.removeItem('switchedTheme');
+          }
+        });
+      </script>
+</body>
+</html>
